@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {displaySuccessToast,displayErrorToast,displayInfoToast,addRow} from './main';
 
-const API_BASE_URL = 'https://todo-app-csoc.herokuapp.com/';
+const API_BASE_URL = 'https://to-do-bucket.herokuapp.com/';
 
 function getTasks() {
      axios({

@@ -24,7 +24,7 @@ const API_BASE_URL = 'https://to-do-bucket.herokuapp.com/';
 
 function logout() {
     localStorage.removeItem('token');
-    window.location.href = '/login/';
+    window.location.href = 'login/';
 }
 
 if(document.querySelector("#logoutButton")){
