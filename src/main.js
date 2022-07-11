@@ -20,7 +20,7 @@ export function displayInfoToast(message) {
     });
 }
 
-const API_BASE_URL = 'https://todo-app-csoc.herokuapp.com/';
+const API_BASE_URL = 'https://dashboard.heroku.com/apps/to-do-bucket/';
 
 function logout() {
     localStorage.removeItem('token');
