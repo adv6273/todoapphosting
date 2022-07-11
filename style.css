@@ -1,10 +1,11 @@
 .todo-profile-name {
-    padding: 5px;
+    padding: 15px;
 }
 
 .todo-add-task {
     margin-top:90px;
     max-width:400px;
+    background-color: rgb(223, 222, 211);
 }
 
 .todo-available-tasks {
@@ -18,7 +19,7 @@
     padding-top:5px;
     margin-bottom:20px;
     max-width:170px;
-    font-size:15px;
+    font-size:20px;
 }
 
 .todo-edit-task-input {
@@ -33,5 +34,8 @@
 }
 
 .todo-task {
+    /* background-color: aqua; */
+    color:rgb(58, 97, 19);
     max-width:260px;
 }
+

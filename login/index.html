@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Login - Todo</title>
+  <title>ToDo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
@@ -16,11 +16,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script type="module" src="../src/no_auth_required.js"></script>
   <script type="module" src="../src/main.js"></script>
+  <style>
+
+    .navbar-dark{
+      background: rgb(46,9,80);
+background: linear-gradient(90deg, rgba(46,9,80,1) 0%, rgba(188,202,205,1) 0%);
+    }
+    body, html {
+  height: 100%;
+/* }
+
+.bg { */
+  /* The image used */
+  background-image: url("/img.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Todo</a>
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" style="font-weight: 500; color: #010211d8;" href="#">Todo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,29 +55,29 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/register/">Register<span class="sr-only">(current)</span></a>
+          <a class="nav-link" style="color: black;" href="/register/">Register Here<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/login/">Login</a>
+          <a class="nav-link" style="color: black;" href="/login/">Login Please</a>
         </li>
       </ul>
     </div>
   </nav>
   <div style="padding-left:6%; max-width:70%; padding-top:6%;">
     <div style="padding-bottom:10px">
-      <span style="color:grey;font-size:20px;">
+      <span style="color:linear-gradient(90deg, rgba(17,178,215,1) 0%, rgba(24,12,233,1) 32%, rgba(0,212,255,1) 100%);font-size:40px;">
         Login
       </span>
     </div>
     <div class="form-group">
-      <label>Username</label>
-      <input type="text" class="form-control" id="inputUsername">
+      <!-- <label>Username</label> -->
+      <input type="text" class="form-control" id="inputUsername" placeholder="Please Enter Your Username ">
     </div>
     <div class="form-group">
-      <label>Password</label>
-      <input type="Password" class="form-control" id="inputPassword">
+
+      <input type="Password" class="form-control" id="inputPassword" placeholder="Here Your Password">
     </div>
-    <button class="btn btn-outline-success my-2 my-sm-0" id="loginButton" type="submit">Log In</button>
+    <button style="color: black; background-color:rgb(218, 228, 228); " class="btn btn-outline-success my-2 my-sm-0" id="loginButton" type="submit">Log In</button>
   </div>
 </body>
 

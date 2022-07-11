@@ -22,15 +22,43 @@
             display: none !important;
         }
     </style>
-<script type="module" crossorigin src="/assets/main.4eecd8f6.js"></script>
-  <link rel="modulepreload" href="/assets/main.f755f9a4.js">
-  <link rel="modulepreload" href="/assets/vendor.d360098b.js">
-  <link rel="stylesheet" href="/assets/main.f2e683d5.css">
+     <style>
+
+        .navbar-dark{
+            background: rgb(46,9,80);
+background: linear-gradient(90deg, rgba(46,9,80,1) 0%, rgba(188,202,205,1) 0%);
+    
+        }
+
+        body, html {
+  height: 100%;
+/* }
+
+.bg { */
+  /* The image used */
+  background-image: url("imgtodo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+      </style>
+      
+<script type="module" crossorigin src="/assets/main.b264c17d.js"></script>
+  <link rel="modulepreload" href="/assets/main.ef11322d.js">
+  <link rel="modulepreload" href="/assets/vendor.8630f904.js">
+  <link rel="stylesheet" href="/assets/main.0c27f967.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Todo</a>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" style="font-weight: 500; color: #010211d8;"  href="#">Todo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,7 +67,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Tasks
+                    <a class="nav-link" style="color:black" href="/">Tasks
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -51,7 +79,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="#" class="rounded-circle" id="avatar-image"><span class="todo-profile-name" id="profile-name">Loading ...</span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#" id="logoutButton">Logout</a>
+                            <a  style="border-radius:10 ;  background-color:rgba(158, 164, 177, 0.904) " class="dropdown-item" href="#" id="logoutButton">Logout</a>
                         </div>
                     </li>
                 </ul>
@@ -60,14 +88,15 @@
     </nav>
     <center>
         <div class="input-group mb-3 todo-add-task">
-            <input type="text" class="form-control" id="taskForm" placeholder="Enter Task">
+            <input type="text" class="form-control" id="taskForm" placeholder="Write Your New Task">
             <div class="input-group-append">
-                <button type="button" class="btn btn-outline-success" id="addTaskButton" >Add Task</button>
+                <button type="button" class="btn btn-outline-success" id="addTaskButton" >Add Task in Your Bucket</button>
             </div>
         </div>
         <ul id="ul" class="list-group todo-available-tasks">
-            <span class="badge badge-primary badge-pill todo-available-tasks-text">
-                Available Tasks
+            <span  style="background-color: rgb(175, 175, 187)
+             ;"  class="badge badge-primary badge-pill todo-available-tasks-text">
+                Pending Tasks
             </span>
         </ul>
     </center>

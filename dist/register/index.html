@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Register- Todo</title>
+  <title>Register</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
@@ -16,15 +16,42 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   
   
-<script type="module" crossorigin src="/assets/register.6d4cd484.js"></script>
+
+  <style>
+
+    .navbar-dark{
+      background: rgb(46,9,80);
+background: linear-gradient(90deg, rgba(46,9,80,1) 0%, rgba(188,202,205,1) 0%);
+    }
+body, html {
+  height: 100%;
+/* }
+
+.bg { */
+  /* The image used */
+  background-image: url("/img.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+    }
+  </style>
+<script type="module" crossorigin src="/assets/register.a07f6f31.js"></script>
   <link rel="modulepreload" href="/assets/no_auth_required.000a5877.js">
-  <link rel="modulepreload" href="/assets/main.f755f9a4.js">
-  <link rel="modulepreload" href="/assets/vendor.d360098b.js">
+  <link rel="modulepreload" href="/assets/main.ef11322d.js">
+  <link rel="modulepreload" href="/assets/vendor.8630f904.js">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Todo</a>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" style="font-weight: 500; color: #010211d8;"  href="#">Todo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,43 +61,43 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="/register/">Register<span class="sr-only">(current)</span></a>
+          <a class="nav-link"  style="color: black;"  href="/register/">Register Here<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login/">Login</a>
+          <a class="nav-link" style="color: black;"  href="/login/">Login Please</a>
         </li>
       </ul>
     </div>
   </nav>
   <div style="padding-left:6%; max-width:70%; padding-top:6%;">
     <div style="padding-bottom:10px">
-      <span style="color:grey;font-size:20px;">
+      <span style="color:linear-gradient(90deg, rgba(17,178,215,1) 0%, rgba(126,12,233,1) 32%, rgba(0,212,255,1) 100%); font-size:40px;">
         Register
       </span>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label>First Name</label>
-        <input type="text" class="form-control" id="inputFirstName">
+       
+        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
       </div>
       <div class="form-group col-md-6">
-        <label>Last Name</label>
-        <input type="text" class="form-control" id="inputLastName">
+        
+        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
       </div>
     </div>
     <div class="form-group">
-      <label>Email Address</label>
-      <input type="email" class="form-control" id="inputEmail">
+      
+      <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address">
     </div>
     <div class="form-group">
-      <label>Username</label>
-      <input type="username" class="form-control" id="inputUsername">
+      
+      <input type="username" class="form-control" id="inputUsername" placeholder="Create Your Username">
     </div>
     <div class="form-group">
-      <label for="inputAddress2">Password</label>
-      <input type="Password" class="form-control" id="inputPassword">
+ 
+      <input type="Password" class="form-control" id="inputPassword" placeholder="Choose Your Password">
     </div>
-    <button class="btn btn-outline-success my-2 my-sm-0" id="registerButton" type="submit">Register</button>
+    <button class="btn btn-outline-success my-2 my-sm-0"  style="background-color:rgb(218, 228, 228); color: black;   " id="registerButton" type="submit">Submit</button>
   </div>
 </body>
 
